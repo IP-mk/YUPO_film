@@ -52,7 +52,7 @@ function initSigma(config) {
 	else
 		drawProps={
         defaultLabelColor: "#000",
-        defaultLabelSize: 30000,
+        defaultLabelSize: 16,
         defaultLabelBGColor: "#ddd",
         defaultHoverLabelBGColor: "#002147",
         defaultLabelHoverColor: "#fff",
@@ -67,8 +67,8 @@ function initSigma(config) {
     	graphProps=config.sigma.graphProperties;
     else
     	graphProps={
-        minNodeSize: 20,
-        maxNodeSize: 200,
+        minNodeSize: 5,
+        maxNodeSize: 25,
         minEdgeSize: 1,
         maxEdgeSize: 10
     	};
