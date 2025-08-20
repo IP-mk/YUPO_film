@@ -211,6 +211,7 @@ function configSigmaElements(config) {
 		sigInst.bind('overnodes',function(event){
 		var nodes = event.content;
 		var neighbors = {};
+		sigInst.settings({ labelHoverRatio: 2.5 });
 		sigInst.iterEdges(function(e){
 		if(nodes.indexOf(e.source)<0 && nodes.indexOf(e.target)<0){
 			if(!e.attr['grey']){
